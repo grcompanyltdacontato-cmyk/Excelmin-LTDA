@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fb">
+  <meta name="description" content="Excelmin — soluções em importação, exportação e logística internacional desde 1998.">
+  <script>document.documentElement.classList.add("intro-pending");</script>
+  <title>Excelmin | Comércio exterior com confiança</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Site.CSS">
+</head>
+<body>
+  <div class="intro-screen" id="intro-screen" aria-hidden="true">
+    <div class="intro-content">
+      <img class="intro-logo" src="excelmin-logo.png" alt="">
+      <p class="intro-tagline" data-i18n="introTagline">Conectando seu negócio ao mundo.</p>
+      <span class="intro-progress" aria-hidden="true"><span></span></span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Excelmin — página inicial" data-i18n-aria="homeLabel">
+        <img class="brand-logo" src="excelmin-logo.png" alt="" aria-hidden="true">
+      </a>
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" type="button" aria-label="Menu de navegação" aria-controls="main-nav" aria-expanded="false" data-i18n-aria="menuToggleLabel">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal" data-i18n-aria="navLabel">
+        <a href="#processo" data-i18n="navProcess">Como funciona</a>
+        <a href="#perguntas" data-i18n="navFaq">Dúvidas frequentes</a>
+        <a href="#diferenciais" data-i18n="navWhy">Diferenciais</a>
+        <a class="nav-cta" href="#contato"><span data-i18n="navContact">Fale conosco</span> <span aria-hidden="true">↗</span></a>
+        <div class="language-picker" id="language-picker">
+          <span class="sr-only" id="language-label" data-i18n="languageLabel">Idioma</span>
+          <button class="language-trigger" id="language-trigger" type="button" aria-labelledby="language-label current-language-name" aria-controls="language-menu" aria-expanded="false">
+            <span class="language-current-flag" id="current-language-flag" aria-hidden="true">
+              <svg class="language-flag-icon" viewBox="0 0 30 20"><rect width="30" height="20" rx="2" fill="#009b3a"/><path d="m15 2 11 8-11 8L4 10z" fill="#ffdf00"/><circle cx="15" cy="10" r="5.1" fill="#002776"/><path d="M10.4 8.8c3.3-.6 6.6.2 9.2 2.4" fill="none" stroke="#fff" stroke-width="1"/></svg>
+            </span>
+            <span class="language-current-name" id="current-language-name">Português</span>
+            <svg class="language-chevron" viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>
+          </button>
+          <div class="language-menu" id="language-menu" role="group" aria-labelledby="language-menu-title" hidden>
+            <div class="language-menu-heading">
+              <span id="language-menu-title" data-i18n="languageMenuTitle">Escolha seu idioma</span>
+              <span class="language-menu-hint" aria-hidden="true">A/文</span>
+            </div>
+            <div class="language-options">
+              <button class="language-option is-selected" type="button" data-language="pt" aria-pressed="true">
+                <span class="language-option-flag" aria-hidden="true"><svg class="language-flag-icon" viewBox="0 0 30 20"><rect width="30" height="20" rx="2" fill="#009b3a"/><path d="m15 2 11 8-11 8L4 10z" fill="#ffdf00"/><circle cx="15" cy="10" r="5.1" fill="#002776"/><path d="M10.4 8.8c3.3-.6 6.6.2 9.2 2.4" fill="none" stroke="#fff" stroke-width="1"/></svg></span>
+                <span class="language-option-name">Português</span>
+                <span class="language-option-code">PT</span>
+                <span class="language-option-check" aria-hidden="true">✓</span>
+              </button>
+              <button class="language-option" type="button" data-language="es" aria-pressed="false">
+                <span class="language-option-flag" aria-hidden="true"><svg class="language-flag-icon" viewBox="0 0 30 20"><rect width="30" height="20" rx="2" fill="#aa151b"/><path d="M0 5h30v10H0z" fill="#f1bf00"/></svg></span>
+                <span class="language-option-name">Español</span>
+                <span class="language-option-code">ES</span>
+                <span class="language-option-check" aria-hidden="true">✓</span>
+              </button>
+              <button class="language-option" type="button" data-language="en" aria-pressed="false">
+                <span class="language-option-flag" aria-hidden="true"><svg class="language-flag-icon" viewBox="0 0 30 20"><rect width="30" height="20" rx="2" fill="#012169"/><path d="m0 0 30 20M30 0 0 20" stroke="#fff" stroke-width="5"/><path d="m0 0 30 20M30 0 0 20" stroke="#c8102e" stroke-width="2"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="7"/><path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="3"/></svg></span>
+                <span class="language-option-name">English</span>
+                <span class="language-option-code">EN</span>
+                <span class="language-option-check" aria-hidden="true">✓</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="heroEyebrow">COMÉRCIO EXTERIOR DESDE 1998</span></p>
+          <h1><span class="hero-title-line" data-i18n="heroTitleFirst">Conectamos</span><br><span class="hero-title-line" data-i18n="heroTitleSecond">seu negócio</span><br><span class="hero-accent" data-i18n="heroTitleAccent">ao mundo.</span></h1>
+          <p class="hero-description" data-i18n="heroDescription">Importação e exportação com estratégia, segurança e proximidade em cada etapa da operação.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#processo"><span data-i18n="heroPrimaryCta">Veja como funciona</span> <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#contato"><span data-i18n="heroSecondaryCta">Fale com a Excelmin</span> <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img
+            src="excelmin-container.png"
+            alt="Contêiner de carga com a identidade visual da Excelmin"
+            data-i18n-alt="heroImageAlt"
+            fetchpriority="high">
+        </div>
+      </div>
+      <div class="hero-decoration" aria-hidden="true"></div>
+    </section>
+
+    <section class="proof-strip" aria-label="Excelmin em números" data-i18n-aria="proofLabel">
+      <div class="container proof-grid">
+        <div class="proof-item">
+          <strong>1998</strong>
+          <span data-i18n="proofSince">Início da nossa história</span>
+        </div>
+        <div class="proof-item">
+          <strong><span class="years-experience">28</span>+</strong>
+          <span data-i18n="proofExperience">anos de experiência</span>
+        </div>
+        <div class="proof-item">
+          <strong data-i18n="proofSolutions">Soluções integradas</strong>
+          <span data-i18n="proofServices">Importação · Exportação · Logística</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section-pad" id="processo">
+      <div class="container">
+        <div class="process-heading reveal">
+          <div>
+            <h2 data-i18n="processTitle">Como uma operação acontece</h2>
+          </div>
+        </div>
+        <ol class="process-steps">
+          <li class="process-step reveal">
+            <span class="process-number">01</span>
+            <h3 data-i18n="processStepOneTitle">Estratégia</h3>
+            <p data-i18n="processStepOneDescription">Entendemos a necessidade e estruturamos a operação.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-number">02</span>
+            <h3 data-i18n="processStepTwoTitle">Origem</h3>
+            <p data-i18n="processStepTwoDescription">Conectamos fornecedores e mercados internacionais.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-number">03</span>
+            <h3 data-i18n="processStepThreeTitle">Operação</h3>
+            <p data-i18n="processStepThreeDescription">Coordenamos documentação, embarque e processos.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-number">04</span>
+            <h3 data-i18n="processStepFourTitle">Logística</h3>
+            <p data-i18n="processStepFourDescription">Acompanhamos o transporte e os principais pontos da operação.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-number">05</span>
+            <h3 data-i18n="processStepFiveTitle">Destino</h3>
+            <p data-i18n="processStepFiveDescription">Sua carga chega ao destino com acompanhamento e previsibilidade.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="global-reach section-pad" id="alcance-global">
+      <div class="container">
+        <div class="global-reach-heading reveal">
+          <div>
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> <span data-i18n="globalEyebrow">ALCANCE INTERNACIONAL</span></p>
+            <h2><span data-i18n="globalTitleFirst">COMÉRCIO NÃO TEM FRONTEIRAS.</span><span data-i18n="globalTitleSecond">NOSSA OPERAÇÃO TAMBÉM NÃO.</span></h2>
+          </div>
+          <p data-i18n="globalDescription">Conexões comerciais com mercados da Ásia, Oriente Médio, Europa e Brasil.</p>
+        </div>
+        <div class="trade-map reveal" role="group" aria-label="Mapa ilustrativo dos mercados da Excelmin" data-i18n-aria="globalMapAria">
+          <img class="trade-map-land" src="world-land.svg" alt="" aria-hidden="true">
+          <svg class="trade-map-art" viewBox="0 0 1000 480" preserveAspectRatio="none" aria-hidden="true">
+            <g class="trade-routes">
+              <path class="trade-route" d="M786 161Q568 181 353 312" />
+              <path class="trade-route" d="M717 205Q506 229 353 312" />
+              <path class="trade-route" d="M650 198Q476 241 353 312" />
+              <path class="trade-route" d="M542 111Q423 209 353 312" />
+            </g>
+          </svg>
+          <span class="trade-marker" style="--marker-x: 78.6%; --marker-y: 33.6%;" tabindex="0" role="img" aria-label="China" aria-describedby="trade-tip-china" data-i18n-aria="globalChinaAria">
+            <span class="trade-marker-dot" aria-hidden="true"></span><span class="trade-marker-name">China</span>
+            <span class="trade-tooltip" id="trade-tip-china" role="tooltip"><strong data-i18n="globalChinaTitle">China</strong><span data-i18n="globalChinaDescription">Foco em importação e conexões comerciais.</span></span>
+          </span>
+          <span class="trade-marker" style="--marker-x: 71.7%; --marker-y: 42.7%;" tabindex="0" role="img" aria-label="Índia" aria-describedby="trade-tip-india" data-i18n-aria="globalIndiaAria">
+            <span class="trade-marker-dot" aria-hidden="true"></span><span class="trade-marker-name" data-i18n="globalIndiaTitle">Índia</span>
+            <span class="trade-tooltip" id="trade-tip-india" role="tooltip"><strong data-i18n="globalIndiaTitle">Índia</strong><span data-i18n="globalIndiaDescription">Conexões comerciais com o mercado indiano.</span></span>
+          </span>
+          <span class="trade-marker" style="--marker-x: 65%; --marker-y: 41.3%;" tabindex="0" role="img" aria-label="Emirados Árabes Unidos" aria-describedby="trade-tip-uae" data-i18n-aria="globalUaeAria">
+            <span class="trade-marker-dot" aria-hidden="true"></span><span class="trade-marker-name" data-i18n="globalUaeTitle">Emirados Árabes</span>
+            <span class="trade-tooltip" id="trade-tip-uae" role="tooltip"><strong data-i18n="globalUaeTitle">Emirados Árabes</strong><span data-i18n="globalUaeDescription">Conexões comerciais com os Emirados Árabes Unidos.</span></span>
+          </span>
+          <span class="trade-marker" style="--marker-x: 54.2%; --marker-y: 23.1%;" tabindex="0" role="img" aria-label="Europa" aria-describedby="trade-tip-europe" data-i18n-aria="globalEuropeAria">
+            <span class="trade-marker-dot" aria-hidden="true"></span><span class="trade-marker-name" data-i18n="globalEuropeTitle">Europa</span>
+            <span class="trade-tooltip" id="trade-tip-europe" role="tooltip"><strong data-i18n="globalEuropeTitle">Europa</strong><span data-i18n="globalEuropeDescription">Conexões comerciais com mercados europeus.</span></span>
+          </span>
+          <span class="trade-marker trade-marker-brazil" style="--marker-x: 35.3%; --marker-y: 65%;" tabindex="0" role="img" aria-label="Brasil" aria-describedby="trade-tip-brazil" data-i18n-aria="globalBrazilAria">
+            <span class="trade-marker-dot" aria-hidden="true"></span><span class="trade-marker-name" data-i18n="globalBrazilTitle">Brasil</span>
+            <span class="trade-tooltip" id="trade-tip-brazil" role="tooltip"><strong data-i18n="globalBrazilTitle">Brasil</strong><span data-i18n="globalBrazilDescription">Base de conexão com o mercado brasileiro.</span></span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="approach section-pad" id="diferenciais">
+      <div class="container approach-grid reveal">
+        <div class="approach-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="approachEyebrow">POR QUE A EXCELMIN?</span></p>
+          <h2><span data-i18n="approachTitleFirst">Mais do que movimentar cargas.</span> <span class="accent" data-i18n="approachTitleAccent">Movimentamos negócios.</span></h2>
+        </div>
+        <ul class="benefit-list">
+          <li><span class="benefit-copy"><strong data-i18n="benefitOne">Experiência</strong><small data-i18n="benefitOneDescription">Conhecimento acumulado ao longo de décadas de atuação.</small></span></li>
+          <li><span class="benefit-copy"><strong data-i18n="benefitTwo">Proximidade</strong><small data-i18n="benefitTwoDescription">Acompanhamento próximo em cada operação.</small></span></li>
+          <li><span class="benefit-copy"><strong data-i18n="benefitThree">Precisão</strong><small data-i18n="benefitThreeDescription">Atenção aos detalhes que fazem diferença no comércio exterior.</small></span></li>
+          <li><span class="benefit-copy"><strong data-i18n="benefitFour">Visão global</strong><small data-i18n="benefitFourDescription">Conexão entre empresas, mercados e oportunidades.</small></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contato">
+      <div class="container contact-inner reveal">
+        <div>
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> <span data-i18n="contactEyebrow">VAMOS CONVERSAR?</span></p>
+          <h2><span data-i18n="contactTitleFirst">Tem uma operação</span><br><span data-i18n="contactTitleSecond">em</span> <span class="accent" data-i18n="contactTitleAccent">mente?</span></h2>
+        </div>
+        <div class="contact-side">
+          <address class="contact-details">
+            <a class="contact-detail" href="tel:+5519982248899">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.8 9 3.3l2 4.8-1.8 1.5a15 15 0 0 0 5.2 5.2l1.5-1.8 4.8 2-.5 2.4a2 2 0 0 1-2.2 1.6A16.5 16.5 0 0 1 5 6a2 2 0 0 1 1.6-2.2Z"/></svg>
+              <span><small data-i18n="phoneLabel">Telefone</small><strong>+55 (19) 98224.8899</strong></span>
+            </a>
+            <a class="contact-detail" href="mailto:alberico@excelmin.com" id="contact-email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+              <span><small data-i18n="emailLabel">E-mail</small><strong>alberico@excelmin.com</strong></span>
+            </a>
+            <div class="contact-detail contact-address">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span><small data-i18n="addressLabel">Endereço</small><strong>Rua Dirceu Balloni, 464<br>Distrito Industrial Sebastião Fumagalli<br>14.483-560 · Limeira - SP · <span data-i18n="country">Brasil</span></strong></span>
+            </div>
+          </address>
+          <p data-i18n="contactDescription">Conte o que você precisa. A gente encontra o melhor caminho.</p>
+          <a class="button button-light contact-whatsapp-cta" href="https://wa.me/5519982248899" target="_blank" rel="noopener noreferrer"><span data-i18n="contactSpecialistCta">Falar com especialista</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-pad" id="perguntas">
+      <div class="container faq-grid reveal">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="faqEyebrow">DÚVIDAS FREQUENTES</span></p>
+          <h2 data-i18n="faqTitle">Vamos esclarecer os primeiros passos.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary data-i18n="faqOneQuestion">A Excelmin pode apoiar minha primeira importação?</summary>
+            <p data-i18n="faqOneAnswer">Sim. Conte à equipe sobre o produto e seus objetivos para conversar sobre as etapas que podem fazer parte da operação.</p>
+          </details>
+          <details>
+            <summary data-i18n="faqTwoQuestion">A Excelmin trabalha com importações da China?</summary>
+            <p data-i18n="faqTwoAnswer">A importação da China é um foco importante. Entre em contato para conversar sobre seu produto e as necessidades específicas da operação.</p>
+          </details>
+          <details>
+            <summary data-i18n="faqThreeQuestion">Quais serviços a Excelmin oferece?</summary>
+            <p data-i18n="faqThreeAnswer">A atuação inclui importação, exportação e logística internacional. O escopo adequado depende dos detalhes de cada operação.</p>
+          </details>
+          <details>
+            <summary data-i18n="faqFourQuestion">Como começo uma conversa sobre minha operação?</summary>
+            <p data-i18n="faqFourAnswer">Fale com a equipe por telefone, e-mail ou WhatsApp e compartilhe o que pretende importar ou exportar.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-meta">
+        <a class="footer-brand" href="#inicio" aria-label="Excelmin — página inicial" data-i18n-aria="homeLabel">
+          <img class="footer-logo" src="excelmin-logo.png" alt="" aria-hidden="true">
+        </a>
+        <small>© <span id="current-year">2026</span> Excelmin. <span data-i18n="rightsReserved">Todos os direitos reservados.</span></small>
+      </div>
+    </div>
+  </footer>
+  <a class="whatsapp-float" id="whatsapp-link" href="https://wa.me/5519982248899?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20com%C3%A9rcio%20exterior." target="_blank" rel="noopener noreferrer" aria-label="Fale com a Excelmin pelo WhatsApp" data-i18n-aria="whatsappLabel" title="WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path class="whatsapp-outline" d="M16 3.2A12.6 12.6 0 0 0 5.2 22.3L3.5 28l5.9-1.6A12.7 12.7 0 1 0 16 3.2Z"/>
+      <path class="whatsapp-handset" d="M11.2 9.2c-.3-.7-.7-.7-1-.7h-.8c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.3 2.6 4.2 6.4 5.7 3.2 1.3 3.8 1 4.5.9.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.8-.5l-2.5-1.2c-.3-.1-.6-.2-.8.2-.2.4-1 1.2-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-1.9-1.2-1-2-2.3-2.2-2.7-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.3 0-.5-.1-.7z"/>
+    </svg>
+    <span class="whatsapp-tooltip" aria-hidden="true">WhatsApp</span>
+  </a>
+  <script>
+    const translations = {
+      pt: {
+        title: "Excelmin | Comércio exterior com confiança",
+        description: "Excelmin — soluções em importação, exportação e logística internacional desde 1998.",
+        introTagline: "Conectando seu negócio ao mundo.",
+        homeLabel: "Excelmin — página inicial",
+        menuToggleLabel: "Menu de navegação",
+        navLabel: "Navegação principal",
+        navProcess: "Como funciona",
+        navWhy: "Diferenciais",
+        navFaq: "Dúvidas frequentes",
+        navContact: "Fale conosco",
+        languageLabel: "Idioma",
+        languageMenuTitle: "Escolha seu idioma",
+        heroEyebrow: "COMÉRCIO EXTERIOR DESDE 1998",
+        heroTitleFirst: "Conectamos",
+        heroTitleSecond: "seu negócio",
+        heroTitleAccent: "ao mundo.",
+        heroDescription: "Importação e exportação com estratégia, segurança e proximidade em cada etapa da operação.",
+        heroPrimaryCta: "Veja como funciona",
+        heroSecondaryCta: "Fale com a Excelmin",
+        heroImageAlt: "Contêiner de carga com a identidade visual da Excelmin",
+        proofLabel: "Excelmin em números",
+        proofSince: "Atuando no comércio exterior",
+        proofExperience: "anos de experiência",
+        proofSolutions: "Soluções integradas",
+        proofServices: "Importação · Exportação · Logística",
+        processTitle: "Como uma operação acontece",
+        processStepOneTitle: "Estratégia",
+        processStepOneDescription: "Entendemos a necessidade e estruturamos a operação.",
+        processStepTwoTitle: "Origem",
+        processStepTwoDescription: "Conectamos fornecedores e mercados internacionais.",
+        processStepThreeTitle: "Operação",
+        processStepThreeDescription: "Coordenamos documentação, embarque e processos.",
+        processStepFourTitle: "Logística",
+        processStepFourDescription: "Acompanhamos o transporte e os principais pontos da operação.",
+        processStepFiveTitle: "Destino",
+        processStepFiveDescription: "Sua carga chega ao destino com acompanhamento e previsibilidade.",
+        globalEyebrow: "ALCANCE INTERNACIONAL",
+        globalTitleFirst: "COMÉRCIO NÃO TEM FRONTEIRAS.",
+        globalTitleSecond: "NOSSA OPERAÇÃO TAMBÉM NÃO.",
+        globalDescription: "Conexões comerciais com mercados da Ásia, Oriente Médio, Europa e Brasil.",
+        globalMapAria: "Mapa ilustrativo dos mercados da Excelmin",
+        globalChinaAria: "Mercado da China",
+        globalChinaTitle: "China",
+        globalChinaDescription: "Importação e conexões comerciais com a China.",
+        globalIndiaAria: "Mercado da Índia",
+        globalIndiaTitle: "Índia",
+        globalIndiaDescription: "Conexões comerciais com o mercado indiano.",
+        globalUaeAria: "Mercado dos Emirados Árabes Unidos",
+        globalUaeTitle: "Emirados Árabes",
+        globalUaeDescription: "Conexões comerciais com os Emirados Árabes Unidos.",
+        globalEuropeAria: "Mercados da Europa",
+        globalEuropeTitle: "Europa",
+        globalEuropeDescription: "Conexões comerciais com mercados europeus.",
+        globalBrazilAria: "Mercado do Brasil",
+        globalBrazilTitle: "Brasil",
+        globalBrazilDescription: "Conexões comerciais no Brasil.",
+        approachEyebrow: "POR QUE A EXCELMIN?",
+        approachTitleFirst: "Mais do que movimentar cargas.",
+        approachTitleAccent: "Movimentamos negócios.",
+        benefitOne: "Experiência",
+        benefitOneDescription: "Conhecimento acumulado ao longo de décadas de atuação.",
+        benefitTwo: "Proximidade",
+        benefitTwoDescription: "Acompanhamento próximo em cada operação.",
+        benefitThree: "Precisão",
+        benefitThreeDescription: "Atenção aos detalhes que fazem diferença no comércio exterior.",
+        benefitFour: "Visão global",
+        benefitFourDescription: "Conexão entre empresas, mercados e oportunidades.",
+        faqEyebrow: "DÚVIDAS FREQUENTES",
+        faqTitle: "Vamos esclarecer os primeiros passos.",
+        faqOneQuestion: "A Excelmin pode apoiar minha primeira importação?",
+        faqOneAnswer: "Sim. Conte à equipe sobre o produto e seus objetivos para conversar sobre as etapas que podem fazer parte da operação.",
+        faqTwoQuestion: "A Excelmin trabalha com importações da China?",
+        faqTwoAnswer: "A importação da China é um foco importante. Entre em contato para conversar sobre seu produto e as necessidades específicas da operação.",
+        faqThreeQuestion: "Quais serviços a Excelmin oferece?",
+        faqThreeAnswer: "A atuação inclui importação, exportação e logística internacional. O escopo adequado depende dos detalhes de cada operação.",
+        faqFourQuestion: "Como começo uma conversa sobre minha operação?",
+        faqFourAnswer: "Fale com a equipe por telefone, e-mail ou WhatsApp e compartilhe o que pretende importar ou exportar.",
+        contactEyebrow: "VAMOS CONVERSAR?",
+        contactTitleFirst: "Tem uma operação",
+        contactTitleSecond: "em",
+        contactTitleAccent: "mente?",
+        contactDescription: "Conte o que você precisa. A gente encontra o melhor caminho.",
+        contactSpecialistCta: "Falar com especialista",
+        phoneLabel: "Telefone",
+        emailLabel: "E-mail",
+        addressLabel: "Endereço",
+        country: "Brasil",
+        emailSubject: "Contato sobre comércio exterior",
+        whatsappLabel: "Fale com a Excelmin pelo WhatsApp",
+        whatsappMessage: "Olá, gostaria de conversar sobre comércio exterior.",
+        rightsReserved: "Todos os direitos reservados."
+      },
+      es: {
+        title: "Excelmin | Comercio exterior con confianza",
+        description: "Excelmin — soluciones de importación, exportación y logística internacional desde 1998.",
+        introTagline: "Conectamos tu negocio con el mundo.",
+        homeLabel: "Excelmin — página de inicio",
+        menuToggleLabel: "Menú de navegación",
+        navLabel: "Navegación principal",
+        navProcess: "Cómo funciona",
+        navWhy: "Ventajas",
+        navFaq: "Preguntas frecuentes",
+        navContact: "Contáctenos",
+        languageLabel: "Idioma",
+        languageMenuTitle: "Elige tu idioma",
+        heroEyebrow: "COMERCIO INTERNACIONAL DESDE 1998",
+        heroTitleFirst: "Conectamos",
+        heroTitleSecond: "tu negocio",
+        heroTitleAccent: "con el mundo.",
+        heroDescription: "Importación y exportación con estrategia, seguridad y cercanía en cada etapa de la operación.",
+        heroPrimaryCta: "Descubre cómo funciona",
+        heroSecondaryCta: "Hable con Excelmin",
+        heroImageAlt: "Contenedor de carga con la identidad visual de Excelmin",
+        proofLabel: "Excelmin en cifras",
+        proofSince: "En comercio exterior",
+        proofExperience: "años de experiencia",
+        proofSolutions: "Soluciones integradas",
+        proofServices: "Importación · Exportación · Logística",
+        processTitle: "Cómo se desarrolla una operación",
+        processStepOneTitle: "Estrategia",
+        processStepOneDescription: "Entendemos la necesidad y estructuramos la operación.",
+        processStepTwoTitle: "Origen",
+        processStepTwoDescription: "Conectamos proveedores y mercados internacionales.",
+        processStepThreeTitle: "Operación",
+        processStepThreeDescription: "Coordinamos la documentación, el embarque y los procesos.",
+        processStepFourTitle: "Logística",
+        processStepFourDescription: "Hacemos seguimiento del transporte y de los principales puntos de la operación.",
+        processStepFiveTitle: "Destino",
+        processStepFiveDescription: "Tu carga llega a destino con seguimiento y previsibilidad.",
+        globalEyebrow: "ALCANCE INTERNACIONAL",
+        globalTitleFirst: "EL COMERCIO NO TIENE FRONTERAS.",
+        globalTitleSecond: "NUESTRA OPERACIÓN TAMPOCO.",
+        globalDescription: "Conexiones comerciales con mercados de Asia, Oriente Medio, Europa y Brasil.",
+        globalMapAria: "Mapa ilustrativo de los mercados de Excelmin",
+        globalChinaAria: "Mercado de China",
+        globalChinaTitle: "China",
+        globalChinaDescription: "Importación y conexiones comerciales con China.",
+        globalIndiaAria: "Mercado de India",
+        globalIndiaTitle: "India",
+        globalIndiaDescription: "Conexiones comerciales con el mercado indio.",
+        globalUaeAria: "Mercado de los Emiratos Árabes Unidos",
+        globalUaeTitle: "Emiratos Árabes",
+        globalUaeDescription: "Conexiones comerciales con los Emiratos Árabes Unidos.",
+        globalEuropeAria: "Mercados de Europa",
+        globalEuropeTitle: "Europa",
+        globalEuropeDescription: "Conexiones comerciales con mercados europeos.",
+        globalBrazilAria: "Mercado de Brasil",
+        globalBrazilTitle: "Brasil",
+        globalBrazilDescription: "Conexiones comerciales en Brasil.",
+        approachEyebrow: "¿POR QUÉ EXCELMIN?",
+        approachTitleFirst: "Más que mover carga.",
+        approachTitleAccent: "Impulsamos negocios.",
+        benefitOne: "Experiencia",
+        benefitOneDescription: "Conocimiento acumulado durante décadas de actividad.",
+        benefitTwo: "Cercanía",
+        benefitTwoDescription: "Seguimiento cercano en cada operación.",
+        benefitThree: "Precisión",
+        benefitThreeDescription: "Atención a los detalles que marcan la diferencia en el comercio exterior.",
+        benefitFour: "Visión global",
+        benefitFourDescription: "Conexión entre empresas, mercados y oportunidades.",
+        faqEyebrow: "PREGUNTAS FRECUENTES",
+        faqTitle: "Aclaremos los primeros pasos.",
+        faqOneQuestion: "¿Excelmin puede apoyarme en mi primera importación?",
+        faqOneAnswer: "Sí. Cuéntanos sobre el producto y tus objetivos para conversar sobre las etapas que podría incluir la operación.",
+        faqTwoQuestion: "¿Excelmin trabaja con importaciones desde China?",
+        faqTwoAnswer: "La importación desde China es un enfoque importante. Contáctanos para conversar sobre tu producto y las necesidades específicas de la operación.",
+        faqThreeQuestion: "¿Qué servicios ofrece Excelmin?",
+        faqThreeAnswer: "La empresa trabaja con importación, exportación y logística internacional. El alcance adecuado depende de los detalles de cada operación.",
+        faqFourQuestion: "¿Cómo inicio una conversación sobre mi operación?",
+        faqFourAnswer: "Contacta al equipo por teléfono, correo electrónico o WhatsApp y cuéntanos qué quieres importar o exportar.",
+        contactEyebrow: "¿HABLAMOS?",
+        contactTitleFirst: "¿Tienes una operación",
+        contactTitleSecond: "en",
+        contactTitleAccent: "mente?",
+        contactDescription: "Cuéntanos qué necesitas. Encontraremos el mejor camino.",
+        contactSpecialistCta: "Hablar con un especialista",
+        phoneLabel: "Teléfono",
+        emailLabel: "Correo electrónico",
+        addressLabel: "Dirección",
+        country: "Brasil",
+        emailSubject: "Consulta sobre comercio exterior",
+        whatsappLabel: "Escríbenos por WhatsApp",
+        whatsappMessage: "Hola, me gustaría hablar sobre comercio exterior.",
+        rightsReserved: "Todos los derechos reservados."
+      },
+      en: {
+        title: "Excelmin | International trade, built on trust",
+        description: "Excelmin — import, export and international logistics solutions since 1998.",
+        introTagline: "We connect your business to the world.",
+        homeLabel: "Excelmin — home",
+        menuToggleLabel: "Navigation menu",
+        navLabel: "Main navigation",
+        navProcess: "How it works",
+        navWhy: "Why Excelmin",
+        navFaq: "FAQs",
+        navContact: "Contact us",
+        languageLabel: "Language",
+        languageMenuTitle: "Choose your language",
+        heroEyebrow: "INTERNATIONAL TRADE SINCE 1998",
+        heroTitleFirst: "We connect",
+        heroTitleSecond: "your business",
+        heroTitleAccent: "to the world.",
+        heroDescription: "Strategic, secure import and export, with close support at every stage of the operation.",
+        heroPrimaryCta: "See how it works",
+        heroSecondaryCta: "Talk to Excelmin",
+        heroImageAlt: "Shipping container featuring Excelmin branding",
+        proofLabel: "Excelmin at a glance",
+        proofSince: "In international trade",
+        proofExperience: "years of experience",
+        proofSolutions: "Integrated solutions",
+        proofServices: "Import · Export · Logistics",
+        processTitle: "How an operation takes shape",
+        processStepOneTitle: "Strategy",
+        processStepOneDescription: "We understand your needs and structure the operation.",
+        processStepTwoTitle: "Origin",
+        processStepTwoDescription: "We connect suppliers and international markets.",
+        processStepThreeTitle: "Operations",
+        processStepThreeDescription: "We coordinate documentation, shipment and processes.",
+        processStepFourTitle: "Logistics",
+        processStepFourDescription: "We follow the transport and key points of the operation.",
+        processStepFiveTitle: "Destination",
+        processStepFiveDescription: "Your cargo reaches its destination with support and predictability.",
+        globalEyebrow: "GLOBAL REACH",
+        globalTitleFirst: "TRADE HAS NO BORDERS.",
+        globalTitleSecond: "NEITHER DOES OUR OPERATION.",
+        globalDescription: "Commercial connections across markets in Asia, the Middle East, Europe and Brazil.",
+        globalMapAria: "Illustrative map of Excelmin's markets",
+        globalChinaAria: "China market",
+        globalChinaTitle: "China",
+        globalChinaDescription: "Import and commercial connections with China.",
+        globalIndiaAria: "India market",
+        globalIndiaTitle: "India",
+        globalIndiaDescription: "Commercial connections with the Indian market.",
+        globalUaeAria: "United Arab Emirates market",
+        globalUaeTitle: "United Arab Emirates",
+        globalUaeDescription: "Commercial connections with the United Arab Emirates.",
+        globalEuropeAria: "European markets",
+        globalEuropeTitle: "Europe",
+        globalEuropeDescription: "Commercial connections across Europe.",
+        globalBrazilAria: "Brazil market",
+        globalBrazilTitle: "Brazil",
+        globalBrazilDescription: "Commercial connections in Brazil.",
+        approachEyebrow: "WHY EXCELMIN?",
+        approachTitleFirst: "More than moving cargo.",
+        approachTitleAccent: "We move business forward.",
+        benefitOne: "Experience",
+        benefitOneDescription: "Knowledge built over decades in international trade.",
+        benefitTwo: "Close partnership",
+        benefitTwoDescription: "Personal support throughout each operation.",
+        benefitThree: "Precision",
+        benefitThreeDescription: "Attention to the details that matter in international trade.",
+        benefitFour: "Global perspective",
+        benefitFourDescription: "Connecting businesses, markets and opportunities.",
+        faqEyebrow: "FREQUENTLY ASKED QUESTIONS",
+        faqTitle: "Let's clarify the first steps.",
+        faqOneQuestion: "Can Excelmin support my first import?",
+        faqOneAnswer: "Yes. Tell us about your product and goals so we can discuss the stages your operation may involve.",
+        faqTwoQuestion: "Does Excelmin work with imports from China?",
+        faqTwoAnswer: "Imports from China are a key focus. Get in touch to discuss your product and the specific needs of your operation.",
+        faqThreeQuestion: "What services does Excelmin offer?",
+        faqThreeAnswer: "The company works with import, export and international logistics. The right scope depends on the details of each operation.",
+        faqFourQuestion: "How do I start a conversation about my operation?",
+        faqFourAnswer: "Contact the team by phone, email or WhatsApp and share what you're looking to import or export.",
+        contactEyebrow: "LET'S TALK",
+        contactTitleFirst: "Have an operation",
+        contactTitleSecond: "in",
+        contactTitleAccent: "mind?",
+        contactDescription: "Tell us what you need. We'll help you find the right way forward.",
+        contactSpecialistCta: "Talk to a specialist",
+        phoneLabel: "Phone",
+        emailLabel: "Email",
+        addressLabel: "Address",
+        country: "Brazil",
+        emailSubject: "International trade inquiry",
+        whatsappLabel: "Chat with Excelmin on WhatsApp",
+        whatsappMessage: "Hello, I'd like to discuss international trade.",
+        rightsReserved: "All rights reserved."
+      }
+    };
+
+    const languagePicker = document.getElementById("language-picker");
+    const languageTrigger = document.getElementById("language-trigger");
+    const languageMenu = document.getElementById("language-menu");
+    const mobileNavToggle = document.getElementById("mobile-nav-toggle");
+    const mainNav = document.getElementById("main-nav");
+    const siteHeader = document.querySelector(".site-header");
+    const languageOptions = [...document.querySelectorAll(".language-option")];
+    const currentLanguageFlag = document.getElementById("current-language-flag");
+    const currentLanguageName = document.getElementById("current-language-name");
+    const contactEmail = document.getElementById("contact-email");
+    const whatsappLink = document.getElementById("whatsapp-link");
+    const pageDescription = document.querySelector('meta[name="description"]');
+    const currentYear = new Date().getFullYear();
+    document.getElementById("current-year").textContent = String(currentYear);
+    document.querySelectorAll(".years-experience").forEach((element) => {
+      element.textContent = String(currentYear - 1998);
+    });
+    const languageDetails = {
+      pt: { name: "Português" },
+      es: { name: "Español" },
+      en: { name: "English" }
+    };
+
+    function setLanguage(language) {
+      const copy = translations[language];
+      const details = languageDetails[language];
+      const selectedOption = languageOptions.find((option) => option.dataset.language === language);
+      document.documentElement.lang = language === "pt" ? "pt-BR" : language;
+      document.title = copy.title;
+      pageDescription.content = copy.description;
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        element.textContent = copy[element.dataset.i18n];
+      });
+
+      document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
+        element.setAttribute("aria-label", copy[element.dataset.i18nAria]);
+      });
+
+      document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+        element.alt = copy[element.dataset.i18nAlt];
+      });
+
+      const emailHref = `mailto:alberico@excelmin.com?subject=${encodeURIComponent(copy.emailSubject)}`;
+      contactEmail.href = emailHref;
+      whatsappLink.href = `https://wa.me/5519982248899?text=${encodeURIComponent(copy.whatsappMessage)}`;
+      currentLanguageFlag.replaceChildren(selectedOption.querySelector(".language-flag-icon").cloneNode(true));
+      currentLanguageName.textContent = details.name;
+      languageOptions.forEach((option) => {
+        const selected = option.dataset.language === language;
+        option.classList.toggle("is-selected", selected);
+        option.setAttribute("aria-pressed", String(selected));
+      });
+    }
+
+    function setLanguageMenuOpen(isOpen) {
+      languageMenu.hidden = !isOpen;
+      languagePicker.classList.toggle("is-open", isOpen);
+      languageTrigger.setAttribute("aria-expanded", String(isOpen));
+    }
+
+    function setMobileNavOpen(isOpen) {
+      siteHeader.classList.toggle("is-menu-open", isOpen);
+      mobileNavToggle.setAttribute("aria-expanded", String(isOpen));
+    }
+
+    mobileNavToggle.addEventListener("click", () => {
+      const isOpen = mobileNavToggle.getAttribute("aria-expanded") !== "true";
+      setMobileNavOpen(isOpen);
+      if (isOpen) {
+        setLanguageMenuOpen(false);
+      }
+    });
+
+    document.querySelector(".brand").addEventListener("click", () => setMobileNavOpen(false));
+
+    mainNav.querySelectorAll("a[href^='#']").forEach((link) => {
+      link.addEventListener("click", () => setMobileNavOpen(false));
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 640) {
+        setMobileNavOpen(false);
+      }
+    });
+
+    languageTrigger.addEventListener("click", () => {
+      setLanguageMenuOpen(languageMenu.hidden);
+      setMobileNavOpen(false);
+    });
+
+    languageOptions.forEach((option) => {
+      option.addEventListener("click", () => {
+        setLanguage(option.dataset.language);
+        setLanguageMenuOpen(false);
+        setMobileNavOpen(false);
+      });
+    });
+
+    document.addEventListener("pointerdown", (event) => {
+      if (!languagePicker.contains(event.target)) {
+        setLanguageMenuOpen(false);
+      }
+      if (!siteHeader.contains(event.target)) {
+        setMobileNavOpen(false);
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        if (!languageMenu.hidden) {
+          setLanguageMenuOpen(false);
+          if (languagePicker.contains(document.activeElement)) {
+            languageTrigger.focus();
+          }
+        }
+        if (mobileNavToggle.getAttribute("aria-expanded") === "true") {
+          setMobileNavOpen(false);
+          mobileNavToggle.focus();
+        }
+      }
+    });
+
+    setLanguageMenuOpen(false);
+
+    const heroImage = document.querySelector(".hero-visual > img");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const introStartedAt = performance.now();
+    let introFinished = false;
+    let introTimer = window.setTimeout(dismissIntro, 1200);
+
+    function dismissIntro() {
+      if (introFinished) {
+        return;
+      }
+
+      introFinished = true;
+      document.documentElement.classList.remove("intro-pending");
+    }
+
+    function finishIntroAfterLoad() {
+      if (introFinished) {
+        return;
+      }
+
+      window.clearTimeout(introTimer);
+      const minimumDuration = reducedMotion.matches ? 220 : 720;
+      introTimer = window.setTimeout(
+        dismissIntro,
+        Math.max(0, minimumDuration - (performance.now() - introStartedAt))
+      );
+    }
+
+    if (document.readyState === "complete") {
+      finishIntroAfterLoad();
+    } else {
+      window.addEventListener("load", finishIntroAfterLoad, { once: true });
+    }
+
+    if (heroImage && !reducedMotion.matches) {
+      let animationFrame = 0;
+
+      const updateParallax = () => {
+        const bounds = heroImage.parentElement.getBoundingClientRect();
+        const progress = Math.min(1, Math.max(0, (window.innerHeight - bounds.top) / (window.innerHeight + bounds.height)));
+        const travelDistance = window.innerWidth <= 640 ? 8 : 80;
+        const offset = (progress - 0.5) * travelDistance;
+        const scale = 1.01 + progress * 0.02;
+        heroImage.style.setProperty("--parallax-offset", `${offset.toFixed(1)}px`);
+        heroImage.style.setProperty("--parallax-scale", scale.toFixed(3));
+        animationFrame = 0;
+      };
+
+      const scheduleParallax = () => {
+        if (!animationFrame) {
+          animationFrame = window.requestAnimationFrame(updateParallax);
+        }
+      };
+
+      window.addEventListener("scroll", scheduleParallax, { passive: true });
+      window.addEventListener("resize", scheduleParallax);
+      updateParallax();
+    }
+
+    const revealElements = document.querySelectorAll(".reveal");
+    if (!reducedMotion.matches && "IntersectionObserver" in window) {
+      document.body.classList.add("motion-ready");
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: "0px 0px -24px 0px" });
+
+      revealElements.forEach((element) => revealObserver.observe(element));
+    }
+  </script>
+</body>
+</html>
